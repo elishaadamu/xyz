@@ -1,6 +1,6 @@
 ---
 title: "All Posts"
 permalink: /posts/
-layout: tag
+layout: post-list
 author_profile: true
 ---
