@@ -26,6 +26,12 @@ search: false
     width: calc(100% - 350px);
     padding-right: 0px;
 }
+.author__urls.social-icons li:nth-child(3) {
+  /* Add your styles here */
+  color: red;
+  font-weight: bold;
+}
+
   }
   @media screen and (min-width: 64em) {
    
@@ -40,5 +46,11 @@ search: false
   -webkit-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
 }
+.author__urls.social-icons li:nth-child(3) {
+  /* Add your styles here */
+  color: red;
+  font-weight: bold;
+}
+
   }
 
