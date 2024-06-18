@@ -1,9 +1,9 @@
 <style>
-  @media ( width <= 1024px) {
-    .mobile-view{
-      text-align: left;
-    }
+@media screen and (min-width: 1024px) {
+  .mobile-view{
+    text-align: left;
   }
+}
 </style>
 <center class="mobile-view">
   {% assign author = page.author | default: page.authors[0] | default: site.author %}
