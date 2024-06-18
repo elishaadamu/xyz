@@ -30,12 +30,12 @@ search: false
   @media screen and (min-width: 64em) {
    
   .page {
-    width: calc(100% - 250px);
+    width: calc(100% - 330px);
     padding-right: 0px;
 }
 .sidebar {
   float: left;
-  width: calc(270px - 1em);
+  width: calc(320px - 1em);
   opacity: 0.75;
   -webkit-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
