@@ -19,7 +19,11 @@ layout: archive
     <h2>{{ year.name }}</h2> <!-- Display the year -->
     <div class="year-group">
       {% for post in year.items %}
-        {% include archive-single.html type=entries_layout %}
+        <article class="post">
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <p>{{ post.content | strip_html | truncatewords: 100 }}</p> <!-- Truncate the content to 100 words -->
+          <a href="{{ post.url }}">Read more</a>
+        </article>
       {% endfor %}
     </div>
   {% endfor %}
