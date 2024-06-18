@@ -21,7 +21,7 @@ layout: archive
       {% for post in year.items %}
         <article class="post">
           <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-          <p class="archive__item-excerpt">{{ post.content | strip_html | truncatewords: 25 }}</p> <!-- Truncate the content to 100 words -->
+          <p style="font-size: 0.75em;">{{ post.content | strip_html | truncatewords: 25 }}</p> <!-- Truncate the content to 100 words -->
           <a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
         </article>
       {% endfor %}
