@@ -20,7 +20,8 @@ layout: archive
     <div class="year-group">
       {% for post in year.items %}
         <article class="post">
-          <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+          <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+          {% include page__meta.html  %}
           <p style="font-size: 0.75em;">{{ post.content | strip_html | truncatewords: 25 }}</p> <!-- Truncate the content to 100 words -->
           <a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
         </article>
