@@ -2,9 +2,7 @@
 layout: archive
 ---
 
-
 {{ content }}
-
 
 {% if paginator %}
   {% assign posts = paginator.posts %}
@@ -13,9 +11,17 @@ layout: archive
 {% endif %}
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
+
+{% assign posts_by_year = posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+
 <div class="entries-{{ entries_layout }}">
-  {% for post in posts %}
-    {% include archive-single.html type=entries_layout %}
+  {% for year in posts_by_year %}
+    <h2>{{ year.name }}</h2> <!-- Display the year -->
+    <div class="year-group">
+      {% for post in year.items %}
+        {% include archive-single.html type=entries_layout %}
+      {% endfor %}
+    </div>
   {% endfor %}
 </div>
 
