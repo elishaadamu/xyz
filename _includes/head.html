@@ -57,8 +57,9 @@
   {% endif %}
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@{{ site.site-twitter }}">
-    <meta name="twitter:creator" content="@{{ site.social-twitter }}">
+    {% for link in site.author.links %}
+    <meta name="twitter:site" content="{{ link.twitter }}">
+    {% endfor %}
   {% if page.title %}
     <meta name="twitter:title" content="{{ page.title }}">
   {% else %}
@@ -73,9 +74,8 @@
     <meta name="twitter:description" content="{{ site.description }}">
   {% endif %}
   {% if page.img %}
-    <meta name="twitter:image:src" content="{{ site.url }}{{ site.baseurl }}/assets/images/{{ page.img }}">
+    <meta name="twitter:image:src" content="{{ site.url }}{{ site.baseurl }}/assets/images/{{ page.image }}">
   {% else %}
-    <meta name="twitter:image:src" content="{{ site.url }}{{ site.baseurl }}/assets/images/{{ site.author-img }}">
+    <meta name="twitter:image:src" content="{{ site.url }}{{ site.baseurl }}/assets/images/{{ site.author.avatar }}">
   {% endif %}
 
-	<meta name="description" content="{{ page.description }}">

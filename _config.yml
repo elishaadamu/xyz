@@ -19,7 +19,7 @@ title                    : "XYBYTES"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "XYBYTES"
-description              : "An amazing website."
+description              : "Christian’s personal blog, mostly containing research on topics as Azure, Active Directory, penetration testing and vulnerabilities."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -109,9 +109,9 @@ author:
   bio              : "I am penetration tester and security researcher in my free time. I enjoy diving deep into Active Directory, Azure, and uncovering undocumented aspects of Microsoft technologies."
   email            :
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:christianbortone@gmail.com"
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: "mailto:christianbortone@gmail.com"
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
     #   url: "https://xybytes.com/"
